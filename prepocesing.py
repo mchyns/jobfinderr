@@ -27,6 +27,7 @@ for loker in loker_list:
         "lokasi"     : bersihkan_teks(loker["lokasi"]),
         "tags"       : bersihkan_teks(loker["tags"]),
         "url"        : loker["url"],
+        "sumber"     : loker.get("sumber", ""),
         # Gabungkan semua teks jadi satu untuk diindeks
         "teks_gabung": bersihkan_teks(
             loker["judul"] + " " + 
